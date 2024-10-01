@@ -1,0 +1,19 @@
+
+Primitive Types in Patterns: Extends pattern matching to include primitive types in instanceof and switch statements.
+----------------------------
+
+
+public class Main {
+    public static void main(String[] args) {
+        Object value =10 ;  // update its value and observe the changes in results
+
+        switch (value) {
+            case Integer i -> System.out.println("It's an Integer with value: " + i);
+		      	case Long l -> System.out.println("It's a Long with value: " + l);
+		      	case Float f -> System.out.println("It's a Float with value:"+f);
+            case Double d -> System.out.println("It's a Double with value: " + d);
+            case null -> System.out.println("It's null");
+            default -> System.out.println("Unknown type");
+        }
+    }
+}
